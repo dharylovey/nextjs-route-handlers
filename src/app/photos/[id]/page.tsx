@@ -6,7 +6,7 @@ const PhotoId = ({
     params: { id: string }
 }) => {
   return (
-    <div className='card'>{id}</div>
+    <div className='flex justify-center items-center border w-[200px]'>{id}</div>
   )
 }
 

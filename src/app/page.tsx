@@ -8,7 +8,7 @@ interface Photo {
 const Page: React.FC = () => {
     let photos: Photo[] = Array.from({ length: 6 }, (_, i) => ({ id: i + 1 }));
     return (
-        <section className='cards-container'>
+        <section className='flex flex-col gap-4 '>
             {photos.map((photo) => (
                 <Link href={`/photos/${photo.id}`} key={photo.id} passHref>
                     {photo.id}
